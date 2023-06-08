@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.11.3 on win32)" generated="20230608 16:21:21.083" rpa="false" schemaversion="3">
+<suite id="s1" name="Demo" source="c:\AEC-2022-2023\AEC-2022-23\3eme_Etape\420-L13-Langage--SCRIPT\RobotFramework-Projet--2\Test_cases\demo.robot">
+<test id="s1-t1" name="tc02 logout_test" line="42">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230608 16:21:21.236" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.</msg>
+<status status="PASS" starttime="20230608 16:21:21.235" endtime="20230608 16:21:24.539"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230608 16:21:24.540" endtime="20230608 16:21:24.661"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>4</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230608 16:21:28.662" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" starttime="20230608 16:21:24.662" endtime="20230608 16:21:28.662"/>
+</kw>
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<arg>name:username</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" starttime="20230608 16:21:28.663" endtime="20230608 16:21:28.698"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name:username</arg>
+<arg>${admin}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230608 16:21:28.700" level="INFO">Typing text 'Admin' into text field 'name:username'.</msg>
+<status status="PASS" starttime="20230608 16:21:28.699" endtime="20230608 16:21:28.744"/>
+</kw>
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<arg>name:password</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" starttime="20230608 16:21:28.745" endtime="20230608 16:21:28.768"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>name:password</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20230608 16:21:28.770" level="INFO">Typing password into text field 'name:password'.</msg>
+<msg timestamp="20230608 16:21:28.794" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20230608 16:21:28.851" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20230608 16:21:28.769" endtime="20230608 16:21:28.852"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath://button[@type='submit']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230608 16:21:28.853" level="INFO">Clicking button 'xpath://button[@type='submit']'.</msg>
+<status status="PASS" starttime="20230608 16:21:28.853" endtime="20230608 16:21:28.905"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230608 16:21:31.906" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230608 16:21:28.906" endtime="20230608 16:21:31.906"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>class:oxd-userdropdown-icon</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230608 16:21:31.908" level="INFO">Clicking element 'class:oxd-userdropdown-icon'.</msg>
+<status status="PASS" starttime="20230608 16:21:31.907" endtime="20230608 16:21:31.954"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>4</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230608 16:21:35.956" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" starttime="20230608 16:21:31.954" endtime="20230608 16:21:35.956"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>link:Logout</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20230608 16:21:35.960" level="INFO">Clicking link 'link:Logout'.</msg>
+<status status="PASS" starttime="20230608 16:21:35.958" endtime="20230608 16:21:36.543"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230608 16:21:38.544" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230608 16:21:36.543" endtime="20230608 16:21:38.544"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230608 16:21:38.545" endtime="20230608 16:21:40.871"/>
+</kw>
+<status status="PASS" starttime="20230608 16:21:21.234" endtime="20230608 16:21:40.872"/>
+</test>
+<doc>Ma premiere suite de test avec Robotframework
+Ceci est un exemple de documentation
+pour expliquer mo(mes) tests</doc>
+<status status="PASS" starttime="20230608 16:21:21.089" endtime="20230608 16:21:40.875"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Demo">Demo</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
